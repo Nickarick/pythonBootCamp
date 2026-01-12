@@ -1,0 +1,24 @@
+import random
+
+selection = ["Rock", "Paper", "Scissors"]
+
+
+
+user = int(input("Please type 0 Rock, 1 for Paper or 2 for Scissors " ))
+print(f"User Selects: {selection[user]}")
+
+computer = random.choice(selection)
+print("Computer Selects: " + computer)
+
+final = selection[user]
+
+
+if computer == final:
+    print("tie")
+elif computer == "Rock" and final == "Paper" or computer == "Paper" and final == "Rock":
+        print("Paper Wins!")
+elif computer == "Rock" and final == "Scissors" or computer == "Scissors" and final == "Rock":
+        print("Rock Wins")
+
+else:
+    print("Scissors Wins!")
