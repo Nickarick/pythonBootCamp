@@ -13,13 +13,14 @@ for test in range(nr_letters):
     for test2 in range(nr_symbols):
         for test3 in range(nr_numbers):    
 
-for password in letters:
-    print(password)
-   # password = random.choice(nr_letters)
-    #for password in nr_symbols:
-     #   password = nr_symbols
-      #  for password in nr_numbers:
-       #     password = nr_numbers
+for password in range(nr_letters):
+    password = random.choice(letters)  
+    for password1 in range(nr_symbols):
+        password1 = random.choice(symbols)+password
+        for password2 in range(nr_numbers):
+            password2 = random.choice(numbers) + password1   
+
+print(password2)
 
 #if password == len(9):
  #   print(password)
