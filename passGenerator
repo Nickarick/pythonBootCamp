@@ -9,6 +9,9 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 
 password = ""
 
+for test in range(nr_letters):
+    for test2 in range(nr_symbols):
+        for test3 in range(nr_numbers):    
 
 for password in letters:
     print(password)
