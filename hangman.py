@@ -14,19 +14,16 @@ for guess in range(len(chosen_word)):
 
 print(placeholder)
 
-guess = input("Guess a letter: \n").lower()
+display = ""
+while chosen_word == display:
+    guess = input("Guess a letter: \n").lower()
+    for letter in chosen_word:
+        if letter == guess:
+            display += letter   
+        else:
+            display += "_"
 
-#Display that puts the letter in the right spot
-
-display = " "
-
-for letter in chosen_word:
-    if letter == guess:
-        display = placeholder.replace("_", guess)
-        print(display)
-    else:
-        print("Wrong")
-
+print(display)
 
 
 #for letter in chosen_word:
